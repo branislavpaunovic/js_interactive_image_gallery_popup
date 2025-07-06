@@ -1,0 +1,69 @@
+* { /* ✅ Universal selector affecting all elements on the page */
+    font-family: 'Poppins', sans-serif; /* ✅ Sets global font to Poppins with sans-serif fallback */
+    font-size: 18px; /* ✅ Base font size for readability */
+    padding: 5px; /* ✅ Adds consistent internal spacing to all elements */
+    margin: 5px; /* ✅ Adds consistent external spacing to all elements */
+    box-sizing: border-box; /* ✅ Includes padding and border in total element width/height calculation */
+}
+
+h1 { /* ✅ Styles all <h1> headings */
+    font-size: 32px; /* ✅ Makes main headings larger for emphasis */
+}
+
+
+button { /* ✅ Styles all <button> elements */
+    background-color: lightgray; /* ✅ Sets a light background color */
+    font-family: 'roboto', sans-serif; /* ✅ Uses Roboto font if available, with sans-serif fallback */
+    font-weight: 600; /* ✅ Makes button text semi-bold for visibility */
+    border-radius: 5px; /* ✅ Slightly rounds button corners */
+    margin: 0px 20px; /* ✅ Vertical margin 0, horizontal 20px for spacing between buttons */
+}
+
+
+.galery { /* ✅ Targets container with class 'galery' */
+    display: flex; /* ✅ Uses Flexbox to arrange child elements (images) in a row */
+}
+
+
+.galery > a { /* ✅ Targets direct <a> elements inside .galery */
+    text-decoration: none; /* ✅ Removes underlines from links for a clean look */
+}
+
+
+.galery > a > img { /* ✅ Targets images inside links within the gallery */
+    width: 20vw; /* ✅ Sets image width to 20% of the viewport width for responsiveness */
+    height: auto; /* ✅ Maintains image aspect ratio */
+}
+
+.popup { /* ✅ Styles the popup preview container */
+    position: fixed; /* ✅ Positions the popup relative to the viewport */
+    top: 20px; /* ✅ Sets 20px space from the top */
+    left: 20px; /* ✅ Sets 20px space from the left */
+    right: 20px; /* ✅ Sets 20px space from the right */
+    display: none; /* ✅ Initially hidden – shown dynamically via JS */
+}
+
+
+.popup.visible { /* ✅ When 'visible' class is added, overrides display:none */
+    display: block; /* ✅ Shows the popup element */
+}
+
+.popup > img { /* ✅ Styles the image inside the popup */
+    width: 100%; /* ✅ Makes the image stretch to full width of the popup */
+    border: 10px solid #ededed; /* ✅ Adds a thick light border around the image */
+    box-sizing: border-box; /* ✅ Ensures padding and border are included in element size */
+    outline: 1px solid #323232; /* ✅ Adds a dark outline around the image for contrast */
+}
+
+.popup > button { /* ✅ Styles the close (X) button inside the popup */
+    background-color: #ededed; /* ✅ Light gray background */
+    color: #323232; /* ✅ Dark gray text color for contrast */
+    width: 20px; /* ✅ Small width for close button */
+    height: 20px; /* ✅ Small height for close button */
+    border-radius: 0px; /* ✅ No rounded corners (sharp square look) */
+    font-size: 10px; /* ✅ Small font size to fit inside small button */
+    padding: 0px; /* ✅ Removes internal spacing */
+    position: fixed; /* ✅ Keeps button fixed on screen while scrolling */
+    top: 34px; /* ✅ Positions the button slightly lower than the popup top */
+    right: 4px; /* ✅ Positions the button near the right edge */
+}

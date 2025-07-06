@@ -1,0 +1,58 @@
+<!DOCTYPE html> <!-- ✅ Declares the document type as HTML5; ensures proper rendering in all modern browsers -->
+
+    <html dir="ltr" lang="sr"> <!-- ✅ Root HTML element; 'dir="ltr"' sets text direction to left-to-right; 'lang="sr"' declares Serbian language -->
+
+    <head> <!-- ✅ The head section contains meta information, styles, scripts, and document settings -->
+
+        <meta charset="utf-8"/> <!-- ✅ Defines character encoding as UTF-8, allowing use of Serbian special characters -->
+
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/> <!-- ✅ Ensures proper scaling and responsiveness on mobile devices -->
+
+        <meta content="Bane (NoOneNeo) Paunović" name="author"/> <!-- ✅ Declares the page author for metadata and documentation purposes -->
+
+        <meta content="JavaScript" name="keywords"/> <!-- ✅ (Deprecated) Keywords for search engines; indicates the content is JavaScript-related -->
+
+        <meta content="JavaScript" name="description"/> <!-- ✅ Short description of the page; used by search engines for snippet display -->
+
+        <meta content="index, follow" name="robots"/> <!-- ✅ Instructs search engine bots to index this page and follow its links -->
+
+        <title>Praćenje događaja promene sadržaja u lokalnom skladištu</title> <!-- ✅ Sets the browser tab title; describes the purpose of the page -->
+
+        <link href="assets/css/main.css" rel="stylesheet"/> <!-- ✅ Links external CSS file to apply styles to this page -->
+
+        <script defer="" src="assets/js/main.js"></script> <!-- ✅ Loads external JavaScript file after the DOM is fully parsed using 'defer' -->
+
+        <link href="assets/pic/logo.png" rel="icon" type="image/x-icon"/> <!-- ✅ Sets the favicon displayed in browser tab -->
+
+        <link href="assets/pic/logo.png" rel="apple-touch-icon"/> <!-- ✅ Specifies an icon for Apple devices when the page is added to home screen -->
+
+    </head>
+
+    <body> <!-- ✅ Contains all visible content displayed in the browser window -->
+
+        <div class="galery"> <!-- ✅ Container div with class 'galery'; used to group image links -->
+
+            <a href="assets/pic/big/3D.jpg"> <!-- ✅ Link that wraps around an image; opens the full-size 3D image when clicked -->
+                <img src="assets/pic/small/3D.jpg" alt="3D Design"> <!-- ✅ Thumbnail image with alternative text '3D Design' -->
+            </a>
+
+            <a href="assets/pic/big/Front.jpg"> <!-- ✅ Link to full-size image labeled 'Front' -->
+                <img src="assets/pic/small/Front.jpg" alt="Front-End Development"> <!-- ✅ Thumbnail image for front-end content -->
+            </a>
+
+            <a href="assets/pic/big/Back.jpg"> <!-- ✅ Link to full-size 'Back-End' image -->
+                <img src="assets/pic/small/Back.jpg" alt="Back-End_Development"> <!-- ✅ Thumbnail image for back-end dev -->
+            </a>
+
+            <a href="assets/pic/big/Full.jpg"> <!-- ✅ Link to full-size 'Full-Stack' image -->
+                <img src="assets/pic/small/Full.jpg" alt="Full-Stack-Development"> <!-- ✅ Thumbnail image for full-stack -->
+            </a>
+
+        </div>
+
+        <div class="popup visible" id="galery-preview">
+            <button onclick="hidePopup();">X</button>
+            <img src="#" alt="Loading image...">
+        </div>
+    </body>
+</html>
